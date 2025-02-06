@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha - Human/Bot Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Type the Text Below</h1>
+        <p id="text">Please type: "Hello World"</p>
+        <input type="text" id="user_input" placeholder="Start typing..." />
+        <button id="submit_button" disabled>Submit</button>
+
+        <p id="status">Status: Waiting...</p>
+        <p id="typing_speed">Typing Speed: --</p>
+        <p id="time_taken">Time Taken: --</p>
+        <p id="mouse_movement">Mouse Movements: --</p>
+        <p id="delay">Delay: --</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

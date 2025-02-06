@@ -1,3 +1,3 @@
 # captcha-refining-ml
 
-conda activate captcha
+make virtual env using -> conda activate captcha
